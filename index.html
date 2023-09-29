@@ -13,21 +13,24 @@
     <div class="main-container ">
         <h1 class="heading-pass">Password Generator</h1>
         <div class="output ">
-            <p class="password-text">
-                P415W0rD! </p>
-            <button><img class="icon" src="images/Copy-icon.svg" alt=""></button>
+            <input type="text" class="password-text" id="passBox">
+
+            <button id="copyicon"><img class="icon" src="images/Copy-icon.svg" alt=""></button>
         </div>
         <div class="other-half">
             <div>
-                <h2 class="character">Character Length</h2>
+                <div class="row">
+                    <h2 class="character">Character Length</h2>
+                    <span id="sliderValue"></span>
+                </div>
 
-                <input type="range" min="1" max="100" class="slider">
+                <input type="range" min="1" max="30" value="8" class="slider" id="inputSlider">
 
                 <ul class="list">
-                    <li class=""><input type="checkbox">Include Uppercase Letters</li>
-                    <li><input type="checkbox" id="style-checkbox">Include Lowercase Letters</li>
-                    <li><input type="checkbox">Include Numbers</li>
-                    <li><input type="checkbox">Include Symbols</li>
+                    <li class=""><input type="checkbox" id="uppercase">Include Uppercase Letters</li>
+                    <li><input type="checkbox" id="lowercase">Include Lowercase Letters</li>
+                    <li><input type="checkbox" id="numbers">Include Numbers</li>
+                    <li><input type="checkbox" id="symbols">Include Symbols</li>
                 </ul>
 
             </div>
@@ -35,16 +38,16 @@
                 <p>STRENGTH</p>
                 <div class="boxes">
 
-                    <span> </span>
-                    <span></span>
-                    <span></span>
-                    <span> </span>
+                    <span id="strength1"> </span>
+                    <span id="strength2"></span>
+                    <span id="strength3"></span>
+                    <span id="strength4"> </span>
                 </div>
             </div>
-            <button class="button-generate">GENERATE <span class="arrow">&#x2192;</span> </button>
+            <button class="button-generate" id="genBtn">GENERATE <span class="arrow">&#x2192;</span> </button>
         </div>
     </div>
-
+    <script src="myscript.js"></script>
 </body>
 
 </html>

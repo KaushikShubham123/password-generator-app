@@ -27,10 +27,13 @@ body {
 .password-text {
 
     padding: 5px;
+    background-color: rgb(69, 66, 66);
+    border: none;
 
-    color: rgb(111, 109, 109);
+    color: aliceblue;
     font-size: 32px;
     margin: 0 0 0 24px;
+    width: 100%;
 
 }
 
@@ -50,7 +53,11 @@ button {
     all: unset;
 }
 
+.list input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
 
+}
 
 .output {
     display: flex;
@@ -75,6 +82,8 @@ button {
     width: 28px;
     height: 28px;
     margin-right: 24px;
+    cursor: pointer;
+
 
 
 
@@ -128,6 +137,10 @@ span {
 
 }
 
+.button-generate:hover {
+    background-color: rgb(67, 219, 118);
+}
+
 .slider {
     width: 100%;
     max-width: 700px;
@@ -142,4 +155,17 @@ span {
     border: none;
 
 
+}
+
+.row span {
+    border: none;
+    color: rgb(0, 255, 89);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    b
 }
